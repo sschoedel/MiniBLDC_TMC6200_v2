@@ -959,7 +959,7 @@
     (property "Value" "Conn_02x02_Counter_Clockwise" (at 237.49 80.6196 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 236.22 83.82 0)
+    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_Via" (at 236.22 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 236.22 83.82 0)
