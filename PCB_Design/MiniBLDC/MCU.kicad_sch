@@ -1294,6 +1294,58 @@
         )
       )
     )
+    (symbol "power:+5VD" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5VD" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5VD\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5VD_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5VD_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5VD" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -2641,6 +2693,31 @@
     )
   )
 
+  (symbol (lib_id "power:+5VD") (at 150.495 55.245 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 13005421-7a98-4d5c-b91a-605e5d7e8475)
+    (property "Reference" "#PWR022" (at 150.495 59.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 150.495 50.8 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 150.495 55.245 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 150.495 55.245 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 78e35729-4d93-4756-a3aa-63ff7ca2af69))
+    (instances
+      (project "MiniBLDC"
+        (path "/f1d82565-2f45-4436-9c4d-3203604bc842/00000000-0000-0000-0000-000061ac26fb"
+          (reference "#PWR022") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VBUS") (at 126.365 55.245 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14697f26-a9a5-45fc-9933-88a22de41d55)
@@ -3547,36 +3624,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 150.495 113.665 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 703a880c-3cc0-4018-8460-a26ebc1b317b)
-    (property "Reference" "#PWR022" (at 150.495 117.475 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 150.495 109.855 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 150.495 113.665 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 150.495 113.665 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid eaa6185c-01a6-4ec2-badc-a0992e668050))
-    (instances
-      (project "BinNanoFOC"
-        (path "/bf5bf284-0cb2-4e69-9b7d-421b8935066e"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "MiniBLDC"
-        (path "/f1d82565-2f45-4436-9c4d-3203604bc842/00000000-0000-0000-0000-000061ac26fb"
-          (reference "#PWR011") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "esp32_master_board-eagle-import:MAX17502EATB+T") (at 207.01 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73b27397-c060-46df-bf83-4778ce9a8edb)
@@ -4178,6 +4225,31 @@
     )
   )
 
+  (symbol (lib_id "power:+5VD") (at 150.495 113.665 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cb60f7b3-7193-4dae-96de-f9418caf9e45)
+    (property "Reference" "#PWR011" (at 150.495 117.475 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 150.495 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 150.495 113.665 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 150.495 113.665 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ae5e4cbe-a48e-497c-9ad9-09dba1237bd4))
+    (instances
+      (project "MiniBLDC"
+        (path "/f1d82565-2f45-4436-9c4d-3203604bc842/00000000-0000-0000-0000-000061ac26fb"
+          (reference "#PWR011") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 298.45 201.295 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce0bba88-f630-4a98-8ffa-61cb673d317c)
@@ -4415,36 +4487,6 @@
       (project "MiniBLDC"
         (path "/f1d82565-2f45-4436-9c4d-3203604bc842/00000000-0000-0000-0000-000061ac26fb"
           (reference "#PWR031") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 150.495 55.245 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid df57e85c-742c-4358-bd56-2e20ffddb514)
-    (property "Reference" "#PWR031" (at 150.495 59.055 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 153.035 54.61 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 150.495 55.245 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 150.495 55.245 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b3b16008-2376-48a9-bde1-c40c80945b61))
-    (instances
-      (project "BinNanoFOC"
-        (path "/bf5bf284-0cb2-4e69-9b7d-421b8935066e"
-          (reference "#PWR031") (unit 1)
-        )
-      )
-      (project "MiniBLDC"
-        (path "/f1d82565-2f45-4436-9c4d-3203604bc842/00000000-0000-0000-0000-000061ac26fb"
-          (reference "#PWR030") (unit 1)
         )
       )
     )
