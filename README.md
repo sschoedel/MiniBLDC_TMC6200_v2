@@ -2,13 +2,16 @@
 
 The MiniBLDC is a brushless (BLDC) motor controller based on the TMC6200 motor controller and the ESP32S3 MCU. Some of the schematics and trace designs are inspired by the [XESC project](https://github.com/ClemensElflein/xESC). This controller was developed at [CMU's Rexlab](http://rexlab.ri.cmu.edu).
 
-![Image](./board_img.jpg)
+<p float="middle">
+  <img src="./MiniBLDC_front.png" width="49%" />
+  <img src="./MiniBLDC_back.png" width="49%" /> 
+</p>
 
-## Design Goals
+## Design goals
 
 The MiniBLDC project was designed to be used in a daisy chain configuration for projects that involve more than 10-1000s of motors to be easily controlable. As such the board needed to be small, affordable, and support communication protocols for daisy chaining. 
 
-## Deeper dive into Design Descisions
+## Deeper dive into design decisions
 
 ### Why the TMC6200 and ESP32
 
@@ -16,7 +19,7 @@ The TMC6200 was chosen due to its affordability(~$5.5), easy configurability and
 
 The ESP32 was picked for its affordability, dual-core support, and wide-peripheral support. The dual core support was extremely important to this application since SimpleFOC's motor loop runs best when it can run as fast as possible. By dedicating one entire core exclusively to the FOC loop and using the other core to handle communication, state machines, external peripherals/sensors, one can achieve great motor performance. The ESP32 also allows for reprogramable pin outputs using internal muxes which makes routing such a small, dense board much easier. Other internal peripherals such as CAN support for daisy-chaining boards, built-in WiFi/BT for wireless motor control, hardware quadrature encoder support for encoders etc were great features to have. Finally, the ESP32S3 has an inbuilt JTAG to USB interface which saves space and cost by not requiring an external serial peripheral, and also enables breakpoint/watchpoint style debugging!
 
-### Choosing a Mosfet
+### Choosing a mosfet
 
 The TMC6200 uses external Mosfets to control the actual switching of the 3 phases in a BLDC motor. This is achieved via 6 Mosfets where there are 2 per phase known as the high-side and low-side mosfet. This external/offboard mosfet design allows for one to pick an appropriate mosfet for their expected motor power output needs and appropriately save money by not getting overkill Mosfets. 
 
@@ -47,7 +50,7 @@ The H1, H2, H3 pins on the board can connect to any sort of encoder such as Magn
 Note that the H1, H2, and H3 pins are 3.3v logic. If your encoder outputs a 5v signal, you will need a level-shifter.
 
 
-## Current Status and Future work
+## Current status and future work
 
 The motor controller board is currently functional in performing torque, velocity, and position control. However, the in-line current sense based closed-loop torque control is only partially tested. Open-loop torque control works extremely well.
 
