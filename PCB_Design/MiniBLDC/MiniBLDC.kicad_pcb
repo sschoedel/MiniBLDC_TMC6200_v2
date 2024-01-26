@@ -692,7 +692,7 @@
     (property "ki_description" "2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) module Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 16 MB, PSRAM up to 8 MB 36 GPIOs, rich set of peripherals Onboard PCB antenna")
     (path "/00000000-0000-0000-0000-000061ac26fb/53e71634-83fe-42b9-ae78-16ac3eed4b4d")
     (attr smd)
-    (fp_text reference "U8" (at -10.5 8.25 90 unlocked) (layer "F.SilkS")
+    (fp_text reference "U8" (at -10.5 8.25 90 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c6ecdd53-1793-461d-8398-7b219f9ce2dc)
     )
