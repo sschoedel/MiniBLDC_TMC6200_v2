@@ -3,7 +3,7 @@
 The MiniBLDC is a brushless (BLDC) motor controller based on the TMC6200 motor controller and the ESP32S3 MCU. Some of the schematics and trace designs are inspired by the [XESC project](https://github.com/ClemensElflein/xESC). This controller was developed at [CMU's Rexlab](http://rexlab.ri.cmu.edu).
 
 <p float="middle">
-  <img src="./MiniBLDC_top.png" width="49%" />
+  <img src="./MiniBLDC_front.png" width="49%" />
   <img src="./MiniBLDC_bottom.png" width="49%" /> 
 </p>
 
