@@ -4698,7 +4698,7 @@
     (property "Value" "L 150uh" (at 219.075 182.245 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_6.3x6.3_H3" (at 219.075 184.785 0)
+    (property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA" (at 219.075 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 219.075 184.785 0)
