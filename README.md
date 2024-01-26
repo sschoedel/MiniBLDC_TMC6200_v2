@@ -4,7 +4,7 @@ The MiniBLDC is a brushless (BLDC) motor controller based on the TMC6200 motor c
 
 <p float="middle">
   <img src="./MiniBLDC_front.png" width="49%" />
-  <img src="./MiniBLDC_back.png" width="49%" /> 
+  <img src="./MiniBLDC_encoder.png" width="49%" /> 
 </p>
 
 ## Design goals
